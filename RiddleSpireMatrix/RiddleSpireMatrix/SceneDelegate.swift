@@ -2,16 +2,17 @@
 //  SceneDelegate.swift
 //  RiddleSpireMatrix
 //
-//  Created by jin fu on 03/02/25.
+//  Created by RiddleSpireMatrix on 03/02/25.
 //
 
 import UIKit
 import IQKeyboardManagerSwift
+import AppTrackingTransparency
+import AppsFlyerLib
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
@@ -32,6 +33,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func sceneDidBecomeActive(_ scene: UIScene) {
         // Called when the scene has moved from an inactive state to an active state.
         // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
+        AppsFlyerLib.shared().start()
+        
+        DispatchQueue.global().asyncAfter(deadline: .now() + 0.42) {
+            if #available(iOS 14, *) {
+                ATTrackingManager.requestTrackingAuthorization { status in
+                }
+            }
+        }
     }
 
     func sceneWillResignActive(_ scene: UIScene) {

@@ -2,7 +2,7 @@
 //  AlphabetGameScene.swift
 //  RiddleSpireMatrix
 //
-//  Created by jin fu on 03/02/25.
+//  Created by RiddleSpireMatrix on 03/02/25.
 //
 
 import SpriteKit

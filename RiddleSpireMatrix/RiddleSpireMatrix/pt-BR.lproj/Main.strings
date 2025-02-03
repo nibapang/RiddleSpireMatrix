@@ -1,0 +1,63 @@
+
+/* Class = "UIButton"; normalTitle = "Share"; ObjectID = "3Pk-bs-ynC"; */
+"3Pk-bs-ynC.normalTitle" = "Share";
+
+/* Class = "UILabel"; text = "RiddleSpire Matrix"; ObjectID = "5ce-8I-n0v"; */
+"5ce-8I-n0v.text" = "RiddleSpire Matrix";
+
+/* Class = "UILabel"; text = "Lives"; ObjectID = "5cn-aj-ntb"; */
+"5cn-aj-ntb.text" = "Lives";
+
+/* Class = "UIButton"; normalTitle = "Blink Dot Challenge"; ObjectID = "B3R-S8-shY"; */
+"B3R-S8-shY.normalTitle" = "Blink Dot Challenge";
+
+/* Class = "UILabel"; text = "Welcome to RiddleSpire Matrix!\nChallenge your mind with thrilling riddles, logic puzzles, and brain-teasing quests.\nSolve, explore, and conquer the matrix! "; ObjectID = "BLG-8X-48w"; */
+"BLG-8X-48w.text" = "Welcome to RiddleSpire Matrix!\nChallenge your mind with thrilling riddles, logic puzzles, and brain-teasing quests.\nSolve, explore, and conquer the matrix! ";
+
+/* Class = "UILabel"; text = "Score"; ObjectID = "LwV-xo-paW"; */
+"LwV-xo-paW.text" = "Score";
+
+/* Class = "UIButton"; normalTitle = "Rate "; ObjectID = "RZ3-0R-79v"; */
+"RZ3-0R-79v.normalTitle" = "Rate ";
+
+/* Class = "UITextView"; text = "Privacy Policy\n\nRiddleSpire Matrix\nEffective Date: January 29, 2025\n\n1. Introduction\n\nWelcome to RiddleSpire Matrix (\"we\", \"our\", or \"us\"). Your privacy is important to us. This Privacy Policy explains how we collect, use, and protect your personal data when you use our mobile application.\n\n2. Information We Collect\n\nWe may collect the following types of information:\n\nPersonal Information: (e.g., name, email) only if you provide it for account registration or customer support.\nUsage Data: Information about your interactions with the app, such as game progress, preferences, and in-app activity.\nDevice Information: We may collect device type, operating system, and unique identifiers for improving app performance.\n3. How We Use Your Information\n\nWe use the collected data to:\n\nProvide and enhance app functionality.\nImprove user experience and app performance.\nAnalyze app usage for bug fixes and optimizations.\nOffer customer support if needed.\n4. Data Sharing & Third Parties\n\nWe do not sell, rent, or share your personal data with third parties, except in the following cases:\n\nLegal Requirements: If required by law or authorities.\nService Providers: Trusted third-party services (e.g., analytics, cloud storage) to improve app functionality.\n5. Data Security\n\nWe implement industry-standard security measures to protect your data. However, no method is 100% secure, and we cannot guarantee absolute security.\n\n6. User Rights & Controls\n\nYou can access, update, or delete your data by contacting us.\nYou can opt out of data collection by adjusting your device settings.\nIf you wish to delete your account or data, contact our support team.\n7. Children's Privacy\n\nRiddleSpire Matrix is not intended for children under 13. We do not knowingly collect data from minors. If you believe a child has provided data, please contact us for deletion.\n\n8. Changes to This Policy\n\nWe may update this Privacy Policy periodically. The latest version will always be available in the app settings. If significant changes occur, we will notify users appropriately.\n\n9. Contact Us\n\nFor any questions about this Privacy Policy, you can contact us at:\n📩 Email: support@riddlespirematrix.com"; ObjectID = "UrU-p3-0YH"; */
+"UrU-p3-0YH.text" = "Privacy Policy\n\nRiddleSpire Matrix\nEffective Date: January 29, 2025\n\n1. Introduction\n\nWelcome to RiddleSpire Matrix (\"we\", \"our\", or \"us\"). Your privacy is important to us. This Privacy Policy explains how we collect, use, and protect your personal data when you use our mobile application.\n\n2. Information We Collect\n\nWe may collect the following types of information:\n\nPersonal Information: (e.g., name, email) only if you provide it for account registration or customer support.\nUsage Data: Information about your interactions with the app, such as game progress, preferences, and in-app activity.\nDevice Information: We may collect device type, operating system, and unique identifiers for improving app performance.\n3. How We Use Your Information\n\nWe use the collected data to:\n\nProvide and enhance app functionality.\nImprove user experience and app performance.\nAnalyze app usage for bug fixes and optimizations.\nOffer customer support if needed.\n4. Data Sharing & Third Parties\n\nWe do not sell, rent, or share your personal data with third parties, except in the following cases:\n\nLegal Requirements: If required by law or authorities.\nService Providers: Trusted third-party services (e.g., analytics, cloud storage) to improve app functionality.\n5. Data Security\n\nWe implement industry-standard security measures to protect your data. However, no method is 100% secure, and we cannot guarantee absolute security.\n\n6. User Rights & Controls\n\nYou can access, update, or delete your data by contacting us.\nYou can opt out of data collection by adjusting your device settings.\nIf you wish to delete your account or data, contact our support team.\n7. Children's Privacy\n\nRiddleSpire Matrix is not intended for children under 13. We do not knowingly collect data from minors. If you believe a child has provided data, please contact us for deletion.\n\n8. Changes to This Policy\n\nWe may update this Privacy Policy periodically. The latest version will always be available in the app settings. If significant changes occur, we will notify users appropriately.\n\n9. Contact Us\n\nFor any questions about this Privacy Policy, you can contact us at:\n📩 Email: support@riddlespirematrix.com";
+
+/* Class = "UISegmentedControl"; ax4-uw-Rmn.segmentTitles[0] = "Easy"; ObjectID = "ax4-uw-Rmn"; */
+"ax4-uw-Rmn.segmentTitles[0]" = "Easy";
+
+/* Class = "UISegmentedControl"; ax4-uw-Rmn.segmentTitles[1] = "Medium"; ObjectID = "ax4-uw-Rmn"; */
+"ax4-uw-Rmn.segmentTitles[1]" = "Medium";
+
+/* Class = "UISegmentedControl"; ax4-uw-Rmn.segmentTitles[2] = "Hard"; ObjectID = "ax4-uw-Rmn"; */
+"ax4-uw-Rmn.segmentTitles[2]" = "Hard";
+
+/* Class = "UISegmentedControl"; ax4-uw-Rmn.segmentTitles[3] = "Expert"; ObjectID = "ax4-uw-Rmn"; */
+"ax4-uw-Rmn.segmentTitles[3]" = "Expert";
+
+/* Class = "UIButton"; normalTitle = "About US"; ObjectID = "cAh-l7-PDs"; */
+"cAh-l7-PDs.normalTitle" = "About US";
+
+/* Class = "UILabel"; text = "RiddleSpire Matrix"; ObjectID = "eT0-Ki-MLF"; */
+"eT0-Ki-MLF.text" = "RiddleSpire Matrix";
+
+/* Class = "UILabel"; text = "RiddleSpire Matrix"; ObjectID = "h3M-ch-0x0"; */
+"h3M-ch-0x0.text" = "RiddleSpire Matrix";
+
+/* Class = "UITextView"; text = "RiddleSpire Matrix\nDescription:\nRiddleSpire Matrix is a fun and engaging puzzle game that challenges players with two exciting mini-games: Missing Letters Mania and Blink Dot Challenge. The game tests players' memory, reflexes, and problem-solving skills through interactive and fast-paced gameplay.\nHow to Play:\n\t•\tMissing Letters Mania: Identify and fill in the missing letters in a given sequence before time runs out. Drag and place the correct letters into their respective slots to complete the challenge.\n\t•\tBlink Dot Challenge: Tap the disappearing dot before it vanishes. The game gets progressively harder as the speed increases, testing your reaction time and accuracy.\nBenefits:\n\t•\tImproves cognitive skills, memory, and letter recognition.\n\t•\tEnhances reflexes and hand-eye coordination.\n\t•\tProvides an engaging and challenging experience suitable for all ages.\n\t•\tEncourages quick thinking and decision-making under time constraints.\n\t•\tOffers multiple difficulty levels to keep players engaged and motivated.\n\n"; ObjectID = "hQD-jG-Vol"; */
+"hQD-jG-Vol.text" = "RiddleSpire Matrix\nDescription:\nRiddleSpire Matrix is a fun and engaging puzzle game that challenges players with two exciting mini-games: Missing Letters Mania and Blink Dot Challenge. The game tests players' memory, reflexes, and problem-solving skills through interactive and fast-paced gameplay.\nHow to Play:\n\t•\tMissing Letters Mania: Identify and fill in the missing letters in a given sequence before time runs out. Drag and place the correct letters into their respective slots to complete the challenge.\n\t•\tBlink Dot Challenge: Tap the disappearing dot before it vanishes. The game gets progressively harder as the speed increases, testing your reaction time and accuracy.\nBenefits:\n\t•\tImproves cognitive skills, memory, and letter recognition.\n\t•\tEnhances reflexes and hand-eye coordination.\n\t•\tProvides an engaging and challenging experience suitable for all ages.\n\t•\tEncourages quick thinking and decision-making under time constraints.\n\t•\tOffers multiple difficulty levels to keep players engaged and motivated.\n\n";
+
+/* Class = "UIButton"; normalTitle = "About App"; ObjectID = "kkT-4f-1dC"; */
+"kkT-4f-1dC.normalTitle" = "About App";
+
+/* Class = "UILabel"; text = "Time"; ObjectID = "qQV-qy-4VW"; */
+"qQV-qy-4VW.text" = "Time";
+
+/* Class = "UIButton"; normalTitle = "Missing Letters Mania"; ObjectID = "rWi-BK-KYF"; */
+"rWi-BK-KYF.normalTitle" = "Missing Letters Mania";
+
+/* Class = "UIButton"; normalTitle = "Privacy Policy"; ObjectID = "xQy-td-THr"; */
+"xQy-td-THr.normalTitle" = "Privacy Policy";
+
+/* Class = "UILabel"; text = "About App"; ObjectID = "xYY-oD-PBn"; */
+"xYY-oD-PBn.text" = "About App";

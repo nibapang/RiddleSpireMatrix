@@ -179,98 +179,41 @@ Test your skills with </string>
         <!--Matrix Privacy View Controller-->
         <scene sceneID="GFF-dn-aYO">
             <objects>
-                <viewController id="Tpd-sX-meq" customClass="MatrixPrivacyViewController" customModule="RiddleSpireMatrix" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MatrixPrivacyViewController" id="Tpd-sX-meq" customClass="MatrixPrivacyViewController" customModule="RiddleSpireMatrix" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yPC-GF-8i0">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="0jS-jo-Gop">
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cIq-dI-vr3">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="UrU-p3-0YH">
-                                <rect key="frame" x="16" y="103" width="361" height="739"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">Privacy Policy
-
-RiddleSpire Matrix
-Effective Date: January 29, 2025
-
-1. Introduction
-
-Welcome to RiddleSpire Matrix ("we", "our", or "us"). Your privacy is important to us. This Privacy Policy explains how we collect, use, and protect your personal data when you use our mobile application.
-
-2. Information We Collect
-
-We may collect the following types of information:
-
-Personal Information: (e.g., name, email) only if you provide it for account registration or customer support.
-Usage Data: Information about your interactions with the app, such as game progress, preferences, and in-app activity.
-Device Information: We may collect device type, operating system, and unique identifiers for improving app performance.
-3. How We Use Your Information
-
-We use the collected data to:
-
-Provide and enhance app functionality.
-Improve user experience and app performance.
-Analyze app usage for bug fixes and optimizations.
-Offer customer support if needed.
-4. Data Sharing &amp; Third Parties
-
-We do not sell, rent, or share your personal data with third parties, except in the following cases:
-
-Legal Requirements: If required by law or authorities.
-Service Providers: Trusted third-party services (e.g., analytics, cloud storage) to improve app functionality.
-5. Data Security
-
-We implement industry-standard security measures to protect your data. However, no method is 100% secure, and we cannot guarantee absolute security.
-
-6. User Rights &amp; Controls
-
-You can access, update, or delete your data by contacting us.
-You can opt out of data collection by adjusting your device settings.
-If you wish to delete your account or data, contact our support team.
-7. Children's Privacy
-
-RiddleSpire Matrix is not intended for children under 13. We do not knowingly collect data from minors. If you believe a child has provided data, please contact us for deletion.
-
-8. Changes to This Policy
-
-We may update this Privacy Policy periodically. The latest version will always be available in the app settings. If significant changes occur, we will notify users appropriately.
-
-9. Contact Us
-
-For any questions about this Privacy Policy, you can contact us at:
-📩 Email: support@riddlespirematrix.com</string>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </textView>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="aeK-wX-zYR">
+                                <rect key="frame" x="186.66666666666666" y="416" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7Qp-JY-ajM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="0jS-jo-Gop" secondAttribute="trailing" id="9VT-zp-YV6"/>
-                            <constraint firstItem="0jS-jo-Gop" firstAttribute="top" secondItem="yPC-GF-8i0" secondAttribute="top" id="eLj-Mc-2no"/>
-                            <constraint firstAttribute="bottom" secondItem="0jS-jo-Gop" secondAttribute="bottom" id="jBF-Cq-9Br"/>
-                            <constraint firstAttribute="bottom" secondItem="UrU-p3-0YH" secondAttribute="bottom" constant="10" id="kxQ-Dt-rBt"/>
-                            <constraint firstItem="UrU-p3-0YH" firstAttribute="leading" secondItem="yPC-GF-8i0" secondAttribute="leading" constant="16" id="lGL-Ig-eyE"/>
-                            <constraint firstAttribute="trailing" secondItem="UrU-p3-0YH" secondAttribute="trailing" constant="16" id="qiJ-E1-yqs"/>
-                            <constraint firstItem="0jS-jo-Gop" firstAttribute="leading" secondItem="yPC-GF-8i0" secondAttribute="leading" id="wAW-Fe-fCW"/>
-                            <constraint firstItem="UrU-p3-0YH" firstAttribute="top" secondItem="7Qp-JY-ajM" secondAttribute="top" id="zg6-Sa-rUh"/>
+                            <constraint firstItem="cIq-dI-vr3" firstAttribute="leading" secondItem="yPC-GF-8i0" secondAttribute="leading" id="50X-sf-Kys"/>
+                            <constraint firstAttribute="bottom" secondItem="cIq-dI-vr3" secondAttribute="bottom" id="Z1O-Gc-OhA"/>
+                            <constraint firstItem="cIq-dI-vr3" firstAttribute="top" secondItem="yPC-GF-8i0" secondAttribute="top" id="dkv-kb-AmK"/>
+                            <constraint firstItem="aeK-wX-zYR" firstAttribute="centerX" secondItem="yPC-GF-8i0" secondAttribute="centerX" id="hYT-Vq-5vI"/>
+                            <constraint firstAttribute="trailing" secondItem="cIq-dI-vr3" secondAttribute="trailing" id="hZf-qO-eos"/>
+                            <constraint firstItem="aeK-wX-zYR" firstAttribute="centerY" secondItem="yPC-GF-8i0" secondAttribute="centerY" id="vB7-k5-tUV"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bNm-Ey-aEU"/>
+                    <connections>
+                        <outlet property="bottomCos" destination="Z1O-Gc-OhA" id="zan-fX-NpU"/>
+                        <outlet property="indicatorView" destination="aeK-wX-zYR" id="oDf-0F-3Nh"/>
+                        <outlet property="riddleSpireWebView" destination="cIq-dI-vr3" id="237-ez-SHI"/>
+                        <outlet property="topCos" destination="dkv-kb-AmK" id="xjn-77-Y6R"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aXU-35-5Qk" sceneMemberID="firstResponder"/>
             </objects>
@@ -369,6 +312,10 @@ Solve, explore, and conquer the matrix! </string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="miL-KI-8KN"/>
+                    <connections>
+                        <outlet property="enterBtn" destination="2wu-lB-831" id="CLX-Vr-3rh"/>
+                        <outlet property="titleBtn" destination="ghv-fW-SUr" id="s7i-cf-r9C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KCb-ec-cuE" sceneMemberID="firstResponder"/>
             </objects>
