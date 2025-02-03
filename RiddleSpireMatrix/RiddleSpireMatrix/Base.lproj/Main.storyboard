@@ -1,0 +1,814 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7ZY-aV-4RS">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Matrix Home View Controller-->
+        <scene sceneID="hrI-Q3-kJE">
+            <objects>
+                <viewController id="jap-vd-cQy" customClass="MatrixHomeViewController" customModule="RiddleSpireMatrix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Emb-fU-DSw">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="qjK-mF-5vf">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9V-nS-qk8">
+                                <rect key="frame" x="2" y="60" width="341" height="106"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="106" id="XBk-YX-qBK"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Welcome to RiddleSpire Matrix!
+Test your skills with </string>
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="17" name="Georgia"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Missing Letters Mania and Blink Dot Challenge. Sharpen memory, boost reflexes, and enjoy the fun!">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="14" name="Georgia"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RiddleSpire Matrix" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h3M-ch-0x0">
+                                <rect key="frame" x="80" y="166" width="311" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="g5M-ay-s7L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7to-GO-ahy">
+                                <rect key="frame" x="20" y="254" width="353" height="578"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="MZc-zb-zmc">
+                                        <rect key="frame" x="12" y="30" width="151.66666666666666" height="488"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="rWi-BK-KYF">
+                                                <rect key="frame" x="0.0" y="0.0" width="151.66666666666666" height="488"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Missing Letters Mania" image="arrowshape.right.fill" catalog="system"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="14"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="wwn-Y9-Pyh" kind="show" id="Wxh-Xl-S2c"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="311-wt-zva">
+                                        <rect key="frame" x="175.66666666666666" y="0.0" width="2" height="578"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="2" id="Wse-gu-iWH"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="IAP-Vm-737">
+                                        <rect key="frame" x="189.66666666666663" y="80" width="151.33333333333337" height="488"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="B3R-S8-shY">
+                                                <rect key="frame" x="0.0" y="0.0" width="151.33333333333334" height="234"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Blink Dot Challenge" image="arrowshape.right.fill" catalog="system"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="14"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="xPB-7M-sow" kind="show" id="Vvc-jS-TsT"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="kkT-4f-1dC">
+                                                <rect key="frame" x="0.0" y="254" width="151.33333333333334" height="234"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="About App" image="arrowshape.right.fill" catalog="system"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="14"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="z6J-ry-6v7" kind="show" id="bXb-HE-TJl"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1349672398" green="0.1198064304" blue="0.47682425899999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="MZc-zb-zmc" secondAttribute="bottom" constant="60" id="2Nf-Dk-HUs"/>
+                                    <constraint firstItem="IAP-Vm-737" firstAttribute="top" secondItem="7to-GO-ahy" secondAttribute="top" constant="80" id="9Xx-ab-9EO"/>
+                                    <constraint firstItem="IAP-Vm-737" firstAttribute="leading" secondItem="311-wt-zva" secondAttribute="trailing" constant="12" id="Ba0-Ou-mk1"/>
+                                    <constraint firstItem="311-wt-zva" firstAttribute="centerY" secondItem="7to-GO-ahy" secondAttribute="centerY" id="Ow8-5h-v8H"/>
+                                    <constraint firstItem="MZc-zb-zmc" firstAttribute="top" secondItem="7to-GO-ahy" secondAttribute="top" constant="30" id="S88-Af-pIu"/>
+                                    <constraint firstAttribute="bottom" secondItem="311-wt-zva" secondAttribute="bottom" id="aEw-JP-PE0"/>
+                                    <constraint firstItem="311-wt-zva" firstAttribute="top" secondItem="7to-GO-ahy" secondAttribute="top" id="aZl-5c-doT"/>
+                                    <constraint firstAttribute="bottom" secondItem="IAP-Vm-737" secondAttribute="bottom" constant="10" id="ayY-LF-fdT"/>
+                                    <constraint firstAttribute="trailing" secondItem="IAP-Vm-737" secondAttribute="trailing" constant="12" id="mrY-tl-OU9"/>
+                                    <constraint firstItem="MZc-zb-zmc" firstAttribute="leading" secondItem="7to-GO-ahy" secondAttribute="leading" constant="12" id="tWd-81-fFA"/>
+                                    <constraint firstItem="311-wt-zva" firstAttribute="centerX" secondItem="7to-GO-ahy" secondAttribute="centerX" id="yaH-8v-gs4"/>
+                                    <constraint firstItem="311-wt-zva" firstAttribute="leading" secondItem="MZc-zb-zmc" secondAttribute="trailing" constant="12" id="yps-kq-Erj"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KDJ-hc-7TA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="7to-GO-ahy" secondAttribute="trailing" constant="20" id="2hN-Dn-bjk"/>
+                            <constraint firstItem="qjK-mF-5vf" firstAttribute="top" secondItem="Emb-fU-DSw" secondAttribute="top" id="57d-GR-luO"/>
+                            <constraint firstItem="qjK-mF-5vf" firstAttribute="leading" secondItem="Emb-fU-DSw" secondAttribute="leading" id="5eM-u7-BeV"/>
+                            <constraint firstAttribute="trailing" secondItem="qjK-mF-5vf" secondAttribute="trailing" id="69Y-b8-72L"/>
+                            <constraint firstAttribute="bottom" secondItem="7to-GO-ahy" secondAttribute="bottom" constant="20" id="9vv-gF-CBu"/>
+                            <constraint firstItem="7to-GO-ahy" firstAttribute="leading" secondItem="Emb-fU-DSw" secondAttribute="leading" constant="20" id="GET-E1-Uei"/>
+                            <constraint firstAttribute="bottom" secondItem="qjK-mF-5vf" secondAttribute="bottom" id="HGb-JY-ifZ"/>
+                            <constraint firstItem="h3M-ch-0x0" firstAttribute="top" secondItem="W9V-nS-qk8" secondAttribute="bottom" id="Olu-d6-Bno"/>
+                            <constraint firstAttribute="trailing" secondItem="W9V-nS-qk8" secondAttribute="trailing" constant="50" id="Yik-jM-30G"/>
+                            <constraint firstItem="h3M-ch-0x0" firstAttribute="leading" secondItem="Emb-fU-DSw" secondAttribute="leading" constant="80" id="bIx-0o-PmD"/>
+                            <constraint firstItem="W9V-nS-qk8" firstAttribute="leading" secondItem="Emb-fU-DSw" secondAttribute="leading" constant="2" id="eS5-kh-LSs"/>
+                            <constraint firstAttribute="trailing" secondItem="h3M-ch-0x0" secondAttribute="trailing" constant="2" id="hFX-he-A5T"/>
+                            <constraint firstItem="7to-GO-ahy" firstAttribute="top" secondItem="h3M-ch-0x0" secondAttribute="bottom" constant="40" id="jro-1T-PTx"/>
+                            <constraint firstItem="W9V-nS-qk8" firstAttribute="top" secondItem="Emb-fU-DSw" secondAttribute="top" constant="60" id="koX-xE-15y"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="XuP-ac-GWs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P7c-pm-diR" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1996" y="-25"/>
+        </scene>
+        <!--Matrix Privacy View Controller-->
+        <scene sceneID="GFF-dn-aYO">
+            <objects>
+                <viewController id="Tpd-sX-meq" customClass="MatrixPrivacyViewController" customModule="RiddleSpireMatrix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yPC-GF-8i0">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="0jS-jo-Gop">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="UrU-p3-0YH">
+                                <rect key="frame" x="16" y="103" width="361" height="739"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Privacy Policy
+
+RiddleSpire Matrix
+Effective Date: January 29, 2025
+
+1. Introduction
+
+Welcome to RiddleSpire Matrix ("we", "our", or "us"). Your privacy is important to us. This Privacy Policy explains how we collect, use, and protect your personal data when you use our mobile application.
+
+2. Information We Collect
+
+We may collect the following types of information:
+
+Personal Information: (e.g., name, email) only if you provide it for account registration or customer support.
+Usage Data: Information about your interactions with the app, such as game progress, preferences, and in-app activity.
+Device Information: We may collect device type, operating system, and unique identifiers for improving app performance.
+3. How We Use Your Information
+
+We use the collected data to:
+
+Provide and enhance app functionality.
+Improve user experience and app performance.
+Analyze app usage for bug fixes and optimizations.
+Offer customer support if needed.
+4. Data Sharing &amp; Third Parties
+
+We do not sell, rent, or share your personal data with third parties, except in the following cases:
+
+Legal Requirements: If required by law or authorities.
+Service Providers: Trusted third-party services (e.g., analytics, cloud storage) to improve app functionality.
+5. Data Security
+
+We implement industry-standard security measures to protect your data. However, no method is 100% secure, and we cannot guarantee absolute security.
+
+6. User Rights &amp; Controls
+
+You can access, update, or delete your data by contacting us.
+You can opt out of data collection by adjusting your device settings.
+If you wish to delete your account or data, contact our support team.
+7. Children's Privacy
+
+RiddleSpire Matrix is not intended for children under 13. We do not knowingly collect data from minors. If you believe a child has provided data, please contact us for deletion.
+
+8. Changes to This Policy
+
+We may update this Privacy Policy periodically. The latest version will always be available in the app settings. If significant changes occur, we will notify users appropriately.
+
+9. Contact Us
+
+For any questions about this Privacy Policy, you can contact us at:
+📩 Email: support@riddlespirematrix.com</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7Qp-JY-ajM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="0jS-jo-Gop" secondAttribute="trailing" id="9VT-zp-YV6"/>
+                            <constraint firstItem="0jS-jo-Gop" firstAttribute="top" secondItem="yPC-GF-8i0" secondAttribute="top" id="eLj-Mc-2no"/>
+                            <constraint firstAttribute="bottom" secondItem="0jS-jo-Gop" secondAttribute="bottom" id="jBF-Cq-9Br"/>
+                            <constraint firstAttribute="bottom" secondItem="UrU-p3-0YH" secondAttribute="bottom" constant="10" id="kxQ-Dt-rBt"/>
+                            <constraint firstItem="UrU-p3-0YH" firstAttribute="leading" secondItem="yPC-GF-8i0" secondAttribute="leading" constant="16" id="lGL-Ig-eyE"/>
+                            <constraint firstAttribute="trailing" secondItem="UrU-p3-0YH" secondAttribute="trailing" constant="16" id="qiJ-E1-yqs"/>
+                            <constraint firstItem="0jS-jo-Gop" firstAttribute="leading" secondItem="yPC-GF-8i0" secondAttribute="leading" id="wAW-Fe-fCW"/>
+                            <constraint firstItem="UrU-p3-0YH" firstAttribute="top" secondItem="7Qp-JY-ajM" secondAttribute="top" id="zg6-Sa-rUh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="bNm-Ey-aEU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aXU-35-5Qk" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2340" y="812"/>
+        </scene>
+        <!--Matrix Enter View Controller-->
+        <scene sceneID="twE-vE-HlM">
+            <objects>
+                <viewController id="p9O-W4-G5x" customClass="MatrixEnterViewController" customModule="RiddleSpireMatrix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mhm-1j-obA">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="Bf0-JD-q8S">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="X4N-0m-7k0">
+                                <rect key="frame" x="71.666666666666686" y="306" width="250" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="iOu-xq-ssO"/>
+                                    <constraint firstAttribute="width" constant="250" id="w3x-pZ-SrM"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLG-8X-48w">
+                                <rect key="frame" x="2" y="60" width="341" height="106"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="106" id="F6I-7w-Vd5"/>
+                                </constraints>
+                                <string key="text">Welcome to RiddleSpire Matrix!
+Challenge your mind with thrilling riddles, logic puzzles, and brain-teasing quests.
+Solve, explore, and conquer the matrix! </string>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RiddleSpire Matrix" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ce-8I-n0v">
+                                <rect key="frame" x="35" y="554" width="323" height="48"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="6zD-yh-yVi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghv-fW-SUr">
+                                <rect key="frame" x="35" y="554" width="323" height="48"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="2wu-lB-831">
+                                <rect key="frame" x="40" y="772" width="60" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="8v0-Ms-xoj"/>
+                                    <constraint firstAttribute="height" constant="60" id="vmF-8B-08O"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="arrowshape.right.fill" catalog="system"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="jap-vd-cQy" kind="show" id="zd7-hl-jHd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CTb-3y-bFU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5ce-8I-n0v" firstAttribute="bottom" secondItem="ghv-fW-SUr" secondAttribute="bottom" id="00A-K3-bvA"/>
+                            <constraint firstItem="BLG-8X-48w" firstAttribute="top" secondItem="Mhm-1j-obA" secondAttribute="top" constant="60" id="4AR-zj-Ffz"/>
+                            <constraint firstItem="5ce-8I-n0v" firstAttribute="trailing" secondItem="ghv-fW-SUr" secondAttribute="trailing" id="5fX-2a-7Ur"/>
+                            <constraint firstItem="5ce-8I-n0v" firstAttribute="leading" secondItem="Mhm-1j-obA" secondAttribute="leading" constant="35" id="5xe-Jf-qJA"/>
+                            <constraint firstItem="2wu-lB-831" firstAttribute="leading" secondItem="Mhm-1j-obA" secondAttribute="leading" constant="40" id="LWB-MS-WID"/>
+                            <constraint firstItem="X4N-0m-7k0" firstAttribute="centerY" secondItem="Mhm-1j-obA" secondAttribute="centerY" id="MQ6-Mp-Faz"/>
+                            <constraint firstAttribute="trailing" secondItem="Bf0-JD-q8S" secondAttribute="trailing" id="MXW-iy-GbJ"/>
+                            <constraint firstAttribute="trailing" secondItem="5ce-8I-n0v" secondAttribute="trailing" constant="35" id="NZv-Od-knb"/>
+                            <constraint firstItem="5ce-8I-n0v" firstAttribute="leading" secondItem="ghv-fW-SUr" secondAttribute="leading" id="NwM-9F-1UB"/>
+                            <constraint firstItem="BLG-8X-48w" firstAttribute="leading" secondItem="Mhm-1j-obA" secondAttribute="leading" constant="2" id="XpR-Aq-BXZ"/>
+                            <constraint firstItem="5ce-8I-n0v" firstAttribute="top" secondItem="ghv-fW-SUr" secondAttribute="top" id="Yp7-Wx-ykw"/>
+                            <constraint firstItem="Bf0-JD-q8S" firstAttribute="leading" secondItem="Mhm-1j-obA" secondAttribute="leading" id="aXv-CM-gvf"/>
+                            <constraint firstAttribute="bottom" secondItem="2wu-lB-831" secondAttribute="bottom" constant="20" id="axc-FN-THM"/>
+                            <constraint firstItem="5ce-8I-n0v" firstAttribute="top" secondItem="X4N-0m-7k0" secondAttribute="bottom" constant="8" id="buw-Mo-XBs"/>
+                            <constraint firstAttribute="trailing" secondItem="BLG-8X-48w" secondAttribute="trailing" constant="50" id="qnl-oq-UEd"/>
+                            <constraint firstItem="X4N-0m-7k0" firstAttribute="centerX" secondItem="Mhm-1j-obA" secondAttribute="centerX" id="sLU-nj-Bok"/>
+                            <constraint firstAttribute="bottom" secondItem="Bf0-JD-q8S" secondAttribute="bottom" id="z9J-mT-anv"/>
+                            <constraint firstItem="Bf0-JD-q8S" firstAttribute="top" secondItem="Mhm-1j-obA" secondAttribute="top" id="zxZ-Ox-p1k"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="miL-KI-8KN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KCb-ec-cuE" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1128.75" y="-34.859154929577464"/>
+        </scene>
+        <!--Matrix About View Controller-->
+        <scene sceneID="0UI-3f-Vee">
+            <objects>
+                <viewController id="MX3-Qq-gMP" customClass="MatrixAboutViewController" customModule="RiddleSpireMatrix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5f4-AC-Dfk">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="b0X-9C-9vq">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hQD-jG-Vol">
+                                <rect key="frame" x="16" y="103" width="361" height="739"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">RiddleSpire Matrix
+Description:
+RiddleSpire Matrix is a fun and engaging puzzle game that challenges players with two exciting mini-games: Missing Letters Mania and Blink Dot Challenge. The game tests players' memory, reflexes, and problem-solving skills through interactive and fast-paced gameplay.
+How to Play:
+	•	Missing Letters Mania: Identify and fill in the missing letters in a given sequence before time runs out. Drag and place the correct letters into their respective slots to complete the challenge.
+	•	Blink Dot Challenge: Tap the disappearing dot before it vanishes. The game gets progressively harder as the speed increases, testing your reaction time and accuracy.
+Benefits:
+	•	Improves cognitive skills, memory, and letter recognition.
+	•	Enhances reflexes and hand-eye coordination.
+	•	Provides an engaging and challenging experience suitable for all ages.
+	•	Encourages quick thinking and decision-making under time constraints.
+	•	Offers multiple difficulty levels to keep players engaged and motivated.
+
+</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JhZ-Ej-3YD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="b0X-9C-9vq" firstAttribute="top" secondItem="5f4-AC-Dfk" secondAttribute="top" id="1Kz-l8-c15"/>
+                            <constraint firstItem="hQD-jG-Vol" firstAttribute="top" secondItem="JhZ-Ej-3YD" secondAttribute="top" id="9PB-o8-0yb"/>
+                            <constraint firstAttribute="trailing" secondItem="hQD-jG-Vol" secondAttribute="trailing" constant="16" id="Ify-ne-6tq"/>
+                            <constraint firstAttribute="bottom" secondItem="b0X-9C-9vq" secondAttribute="bottom" id="NF6-FJ-5e4"/>
+                            <constraint firstItem="hQD-jG-Vol" firstAttribute="leading" secondItem="5f4-AC-Dfk" secondAttribute="leading" constant="16" id="aZ6-LE-RcB"/>
+                            <constraint firstAttribute="trailing" secondItem="b0X-9C-9vq" secondAttribute="trailing" id="eu9-Rj-1Bh"/>
+                            <constraint firstAttribute="bottom" secondItem="hQD-jG-Vol" secondAttribute="bottom" constant="10" id="lCV-31-TjC"/>
+                            <constraint firstItem="b0X-9C-9vq" firstAttribute="leading" secondItem="5f4-AC-Dfk" secondAttribute="leading" id="w2q-K0-Fdb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="dES-tr-2Iy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lFv-cd-KJq" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1680" y="801.76056338028172"/>
+        </scene>
+        <!--Matrix Setting View Controlle-->
+        <scene sceneID="KmO-G3-geK">
+            <objects>
+                <viewController id="z6J-ry-6v7" customClass="MatrixSettingViewControlle" customModule="RiddleSpireMatrix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="piy-gs-53a">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="hiD-mC-WVI">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About App" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xYY-oD-PBn">
+                                <rect key="frame" x="2" y="60" width="341" height="106"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="106" id="fjc-ax-SEj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="43"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RiddleSpire Matrix" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eT0-Ki-MLF">
+                                <rect key="frame" x="80" y="166" width="311" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="XC3-hX-Wts"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L57-h8-TSa">
+                                <rect key="frame" x="20" y="254" width="353" height="578"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Mx7-hE-jUY">
+                                        <rect key="frame" x="12" y="30" width="151.66666666666666" height="488"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="cAh-l7-PDs">
+                                                <rect key="frame" x="0.0" y="0.0" width="151.66666666666666" height="234"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="About US" image="arrowshape.right.fill" catalog="system"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="14"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="MX3-Qq-gMP" kind="show" id="FAZ-iA-fE0"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="RZ3-0R-79v">
+                                                <rect key="frame" x="0.0" y="254" width="151.66666666666666" height="234"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Rate " image="arrowshape.right.fill" catalog="system"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="14"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="btnRate:" destination="z6J-ry-6v7" eventType="touchUpInside" id="kc2-QT-OQj"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CDL-P0-EXt">
+                                        <rect key="frame" x="175.66666666666666" y="0.0" width="2" height="578"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="2" id="0mN-tT-TTY"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="CQ0-XA-k6c">
+                                        <rect key="frame" x="189.66666666666663" y="80" width="151.33333333333337" height="488"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="xQy-td-THr">
+                                                <rect key="frame" x="0.0" y="0.0" width="151.33333333333334" height="234"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Privacy Policy" image="arrowshape.right.fill" catalog="system"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="14"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="Tpd-sX-meq" kind="show" id="x40-JR-5Ug"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="3Pk-bs-ynC">
+                                                <rect key="frame" x="0.0" y="254" width="151.33333333333334" height="234"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Share" image="arrowshape.right.fill" catalog="system"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="14"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="share:" destination="z6J-ry-6v7" eventType="touchUpInside" id="fxB-Br-cjg"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="CQ0-XA-k6c" secondAttribute="bottom" constant="10" id="43o-aq-het"/>
+                                    <constraint firstItem="CDL-P0-EXt" firstAttribute="centerX" secondItem="L57-h8-TSa" secondAttribute="centerX" id="6fF-un-8Gh"/>
+                                    <constraint firstItem="Mx7-hE-jUY" firstAttribute="top" secondItem="L57-h8-TSa" secondAttribute="top" constant="30" id="C0M-ab-xya"/>
+                                    <constraint firstItem="CDL-P0-EXt" firstAttribute="leading" secondItem="Mx7-hE-jUY" secondAttribute="trailing" constant="12" id="Nrr-og-a3k"/>
+                                    <constraint firstItem="CDL-P0-EXt" firstAttribute="top" secondItem="L57-h8-TSa" secondAttribute="top" id="RfX-gA-Y9y"/>
+                                    <constraint firstAttribute="trailing" secondItem="CQ0-XA-k6c" secondAttribute="trailing" constant="12" id="X9N-md-lGO"/>
+                                    <constraint firstAttribute="bottom" secondItem="Mx7-hE-jUY" secondAttribute="bottom" constant="60" id="XxP-8j-QGr"/>
+                                    <constraint firstItem="Mx7-hE-jUY" firstAttribute="leading" secondItem="L57-h8-TSa" secondAttribute="leading" constant="12" id="eRb-DP-wf5"/>
+                                    <constraint firstItem="CDL-P0-EXt" firstAttribute="centerY" secondItem="L57-h8-TSa" secondAttribute="centerY" id="fNJ-rA-El6"/>
+                                    <constraint firstItem="CQ0-XA-k6c" firstAttribute="top" secondItem="L57-h8-TSa" secondAttribute="top" constant="80" id="iTj-f4-Ujs"/>
+                                    <constraint firstAttribute="bottom" secondItem="CDL-P0-EXt" secondAttribute="bottom" id="rib-Dw-NYi"/>
+                                    <constraint firstItem="CQ0-XA-k6c" firstAttribute="leading" secondItem="CDL-P0-EXt" secondAttribute="trailing" constant="12" id="si6-KC-W2X"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mCb-fp-cYo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eT0-Ki-MLF" firstAttribute="leading" secondItem="piy-gs-53a" secondAttribute="leading" constant="80" id="0IC-3t-N2r"/>
+                            <constraint firstItem="hiD-mC-WVI" firstAttribute="leading" secondItem="piy-gs-53a" secondAttribute="leading" id="6io-fX-TPp"/>
+                            <constraint firstAttribute="bottom" secondItem="L57-h8-TSa" secondAttribute="bottom" constant="20" id="7Am-hA-BpU"/>
+                            <constraint firstAttribute="bottom" secondItem="hiD-mC-WVI" secondAttribute="bottom" id="7bz-3Q-YJx"/>
+                            <constraint firstItem="xYY-oD-PBn" firstAttribute="leading" secondItem="piy-gs-53a" secondAttribute="leading" constant="2" id="FWZ-l7-ta4"/>
+                            <constraint firstAttribute="trailing" secondItem="xYY-oD-PBn" secondAttribute="trailing" constant="50" id="HvI-om-YGe"/>
+                            <constraint firstAttribute="trailing" secondItem="eT0-Ki-MLF" secondAttribute="trailing" constant="2" id="I3v-k4-Ovu"/>
+                            <constraint firstItem="L57-h8-TSa" firstAttribute="top" secondItem="eT0-Ki-MLF" secondAttribute="bottom" constant="40" id="IDH-65-8nd"/>
+                            <constraint firstItem="xYY-oD-PBn" firstAttribute="top" secondItem="piy-gs-53a" secondAttribute="top" constant="60" id="QnQ-Zg-oOE"/>
+                            <constraint firstItem="L57-h8-TSa" firstAttribute="leading" secondItem="piy-gs-53a" secondAttribute="leading" constant="20" id="b7m-CN-z70"/>
+                            <constraint firstAttribute="trailing" secondItem="hiD-mC-WVI" secondAttribute="trailing" id="hhc-0P-xt1"/>
+                            <constraint firstAttribute="trailing" secondItem="L57-h8-TSa" secondAttribute="trailing" constant="20" id="omE-FB-y3Y"/>
+                            <constraint firstItem="hiD-mC-WVI" firstAttribute="top" secondItem="piy-gs-53a" secondAttribute="top" id="pcE-Wz-HSF"/>
+                            <constraint firstItem="eT0-Ki-MLF" firstAttribute="top" secondItem="xYY-oD-PBn" secondAttribute="bottom" id="rVT-u7-8J1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="0Ku-T1-t7i"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P5c-52-QS6" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="966" y="802"/>
+        </scene>
+        <!--Matrix Navigation Controller-->
+        <scene sceneID="2ZA-Nq-BZz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7ZY-aV-4RS" customClass="MatrixNavigationController" customModule="RiddleSpireMatrix" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1F9-Tc-6vn">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="22"/>
+                            <color key="textColor" systemColor="systemPinkColor"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="p9O-W4-G5x" kind="relationship" relationship="rootViewController" id="fvO-6A-VN6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="joa-qj-qS2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.25" y="-34.859154929577464"/>
+        </scene>
+        <!--Matrix Drag View Controller-->
+        <scene sceneID="VI8-un-nnI">
+            <objects>
+                <viewController id="wwn-Y9-Pyh" customClass="MatrixDragViewController" customModule="RiddleSpireMatrix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BqE-Ds-U1w">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="9tA-du-oL5">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kWy-6n-zCj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="9tA-du-oL5" secondAttribute="bottom" id="GEi-8x-6dw"/>
+                            <constraint firstItem="9tA-du-oL5" firstAttribute="leading" secondItem="BqE-Ds-U1w" secondAttribute="leading" id="W6O-dv-pL9"/>
+                            <constraint firstAttribute="trailing" secondItem="9tA-du-oL5" secondAttribute="trailing" id="ind-KP-hJF"/>
+                            <constraint firstItem="9tA-du-oL5" firstAttribute="top" secondItem="BqE-Ds-U1w" secondAttribute="top" id="lGp-jL-JbU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="D1z-Ac-d57"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zBd-TJ-kvi" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2784" y="12"/>
+        </scene>
+        <!--Matrix Dot Game View Controller-->
+        <scene sceneID="4QE-ah-w29">
+            <objects>
+                <viewController id="xPB-7M-sow" customClass="MatrixDotGameViewController" customModule="RiddleSpireMatrix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FJb-UA-UYl">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="sRn-ET-oEs">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="5RS-Dz-qFQ">
+                                <rect key="frame" x="2" y="85" width="389" height="100"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ax4-uw-Rmn">
+                                        <rect key="frame" x="0.0" y="0.0" width="389" height="50"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <segments>
+                                            <segment title="Easy"/>
+                                            <segment title="Medium"/>
+                                            <segment title="Hard"/>
+                                            <segment title="Expert"/>
+                                        </segments>
+                                    </segmentedControl>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="2Lm-lc-x2V">
+                                        <rect key="frame" x="0.0" y="51" width="389" height="49"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQV-qy-4VW">
+                                                <rect key="frame" x="0.0" y="0.0" width="125.66666666666667" height="49"/>
+                                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LwV-xo-paW">
+                                                <rect key="frame" x="131.66666666666666" y="0.0" width="125.66666666666666" height="49"/>
+                                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lives" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cn-aj-ntb">
+                                                <rect key="frame" x="263.33333333333331" y="0.0" width="125.66666666666669" height="49"/>
+                                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Sms-LB-cdl"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kVB-zY-XXl">
+                                <rect key="frame" x="20" y="195" width="353" height="637"/>
+                                <color key="backgroundColor" red="0.1349672398" green="0.1198064304" blue="0.47682425899999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Dvt-ul-gyh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5RS-Dz-qFQ" firstAttribute="leading" secondItem="FJb-UA-UYl" secondAttribute="leading" constant="2" id="6DV-WM-9q9"/>
+                            <constraint firstAttribute="trailing" secondItem="sRn-ET-oEs" secondAttribute="trailing" id="B0E-LE-g6c"/>
+                            <constraint firstAttribute="trailing" secondItem="kVB-zY-XXl" secondAttribute="trailing" constant="20" id="B1f-So-aGK"/>
+                            <constraint firstItem="kVB-zY-XXl" firstAttribute="top" secondItem="5RS-Dz-qFQ" secondAttribute="bottom" constant="10" id="CIA-bH-5P5"/>
+                            <constraint firstItem="5RS-Dz-qFQ" firstAttribute="top" secondItem="FJb-UA-UYl" secondAttribute="top" constant="85" id="Kre-IY-lB3"/>
+                            <constraint firstAttribute="bottom" secondItem="sRn-ET-oEs" secondAttribute="bottom" id="UmG-s3-aVV"/>
+                            <constraint firstAttribute="bottom" secondItem="kVB-zY-XXl" secondAttribute="bottom" constant="20" id="kfU-Lc-ogL"/>
+                            <constraint firstItem="sRn-ET-oEs" firstAttribute="top" secondItem="FJb-UA-UYl" secondAttribute="top" id="plL-Ai-mXQ"/>
+                            <constraint firstItem="sRn-ET-oEs" firstAttribute="leading" secondItem="FJb-UA-UYl" secondAttribute="leading" id="s3n-2V-PuL"/>
+                            <constraint firstItem="kVB-zY-XXl" firstAttribute="leading" secondItem="FJb-UA-UYl" secondAttribute="leading" constant="20" id="s6d-X1-paZ"/>
+                            <constraint firstAttribute="trailing" secondItem="5RS-Dz-qFQ" secondAttribute="trailing" constant="2" id="yie-EV-NlA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Gha-sc-bun"/>
+                    <connections>
+                        <outlet property="gameBoardView" destination="kVB-zY-XXl" id="OZH-Ec-7T3"/>
+                        <outlet property="livesLabel" destination="5cn-aj-ntb" id="3rA-B2-njF"/>
+                        <outlet property="scoreLabel" destination="LwV-xo-paW" id="8pI-nA-vJg"/>
+                        <outlet property="segmentControl" destination="ax4-uw-Rmn" id="2i7-Ld-Zs6"/>
+                        <outlet property="timerLabel" destination="qQV-qy-4VW" id="hfQ-ee-CQk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="diK-eK-sHX" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3870" y="-4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrowshape.right.fill" catalog="system" width="128" height="104"/>
+        <image name="bg" width="1125" height="2436"/>
+        <image name="logo" width="1024" height="1024"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
